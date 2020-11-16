@@ -15,12 +15,12 @@ class MainActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
-        registerForContextMenu(imageViewCM)
+        registerForContextMenu(buttonStart)
 
-        buttonStart.setOnClickListener {
+       /* buttonStart.setOnClickListener {
             var i = Intent(this,MyService::class.java)
             startService(i)
-        }
+        }*/
 
         buttonStop.setOnClickListener {
             var i = Intent(this, MyService::class.java)
